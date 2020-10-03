@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import {Link , withRouter} from 'react-router-dom'
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -37,12 +38,11 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About Me</li>
-      <li>Contact Me</li>
-      <li>Curiculum Vitae</li>
-      <li>Portfolio</li>
-
+      <li><Link to = "/portfolio/home">Home</Link></li>
+      <li><Link to = "/portfolio/about">About Me</Link></li>
+      <li><Link to = "/portfolio/contact">Contact Me</Link></li>
+      <li><Link to = "/portfolio/portfolio">Portfolio</Link></li>
+      <li><Link to = "/portfolio/curiculumvitae">Curiculum Vitae</Link></li>
     </Ul>
   )
 }
