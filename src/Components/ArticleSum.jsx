@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import styled from 'styled-components';
 
 const StyledSummary = styled.div`
@@ -16,19 +17,25 @@ const ArticleBody = styled.body`
 `
 
 
-const ArcticleSum = () => {
+const ArcticleSum = ({title , summary, img}) => {
   return(
     <StyledSummary>
-      <header> TITRE</header>
+      <header> {title}</header>
       <body>
         <section>
-          text
+          {summary}
         </section>
-        <image scr = "images/collage.png"/>
+        <image scr = {img}/>
       </body>
       
     </StyledSummary>
   )
+}
+
+ArcticleSum.propTypes = {
+  title : PropTypes.string.isRequired,
+  summary : PropTypes.string.isRequired,
+  img : PropTypes.string.isRequired,
 }
 
 
