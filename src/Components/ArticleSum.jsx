@@ -3,30 +3,97 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components';
 
 const StyledSummary = styled.div`
-  
-  width : 400px;
-  height : 200px;
-  margin : 3px;
+  text-align: left;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  overflow: hidden;
+  width : 80vw;
+  height : 45vw;
+  margin : 0vh;
   color: ${props => props.theme.textLight};
   background-color:${props => props.theme.backgroundSection};
 
+
+  @media only screen and (max-width: 600px) {
+    width : 90vw;
+    height : 120vw;
+  }
+
+`;
+const ArticleHead = styled.div`
+  text-align: left;
+  text-anchor: middle;
+  
+  font-size : 2em;
+  
+  background-color: ${props => props.theme.backgroundTitle};
+  height: 5vw;
+  min-height: 50px;
+  
 `;
 
-const ArticleBody = styled.body`
+const ArticleBody = styled.div`
+  display: flex;
+  flex-direction : row;
 
-`
+  @media only screen and (max-width: 600px) {
+    flex-direction : column-reverse;
+  }
 
 
-const ArcticleSum = ({title , summary, img}) => {
+  
+`;
+const Summary = styled.section`
+  padding : 2%;
+  
+  width : 50%;
+  height: 100%;
+  @media only screen and (max-width: 600px) {
+    width : 100%;
+  }
+`;
+
+const Imagestyled = styled.img`
+  width : 40vw;
+  height: 40vw;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height:auto;
+    display: block;
+  }
+`;
+
+
+const VideoStyled = styled.video`
+  width : 40vw;
+  height: 40vw;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height:auto;
+    display: block;
+  }
+`;
+
+
+const ArcticleSum = ({title , summary, img, video}) => {
   return(
     <StyledSummary>
-      <header> {title}</header>
-      <body>
-        <section>
+      <ArticleHead> {title}</ArticleHead>
+      <ArticleBody>
+        <Summary>
           {summary}
-        </section>
-        <image scr = {img}/>
-      </body>
+        </Summary>
+
+        {video
+        ? <VideoStyled src = {img}  alt = {title} autoPlay loop muted />
+        : <Imagestyled src = {img}  alt = {title}/>
+        }
+        
+        
+      </ArticleBody>
       
     </StyledSummary>
   )

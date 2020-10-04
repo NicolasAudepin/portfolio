@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import {Link , withRouter} from 'react-router-dom'
 const Ul = styled.ul`
+  margin: 0px;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -21,12 +22,11 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: ${props => props.theme.backgroundTitle};
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0px;
-    right: 0;
+    right: 0px;
     height: 100vh;
     width: 200px;
-    padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
 
     li {

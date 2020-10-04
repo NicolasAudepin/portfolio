@@ -5,14 +5,19 @@ import NavBar from './Components/Nav/Navbar'
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
 import './App.css';
+import styled from 'styled-components';
+
+const StyledApp = styled.div`
+  background-color: ${props => props.theme.backgroundMain};
+
+`;
 
 
 function App() {
   return (
-    <div className="App">
+    <StyledApp className="App">
       <Router className="App-header">
         <NavBar/>
-        <image scr = "images/collage.png"/>
         <Switch>
           <Route path = "/portfolio/home" exact component = {() => <Home/>} />
           <Route path = "/" exact component = {() => <Home/>} />
@@ -21,7 +26,7 @@ function App() {
 
         </Switch>                
       </Router>
-    </div>
+    </StyledApp>
   );
 }
 
