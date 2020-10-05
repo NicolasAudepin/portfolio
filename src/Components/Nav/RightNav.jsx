@@ -10,7 +10,9 @@ const Ul = styled.ul`
 
   li {
     padding: 18px 10px;
+    color: ${props => props.theme.textLight};
   }
+
 
   li:hover {
     border-bottom: 2px solid #FFFFFF;
@@ -21,6 +23,7 @@ const Ul = styled.ul`
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: ${props => props.theme.backgroundTitle};
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0px;
@@ -29,11 +32,10 @@ const Ul = styled.ul`
     width: 200px;
     transition: transform 0.3s ease-in-out;
 
-    li {
-      color: #fff;
-    }
   }
 `;
+
+
 
 const RightNav = ({ open }) => {
   return (

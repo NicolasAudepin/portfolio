@@ -1,26 +1,45 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const StyledSummary = styled.div`
-  text-align: left;
+  &{
+    text-align: left;
+    border-radius: 20px;
+    overflow: hidden;
+    width : 80vw;
+    height : 45vw;
+    margin : 0vh;
+    color: ${props => props.theme.textLight};
+    background-color:${props => props.theme.backgroundSection};
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 20px;
-  overflow: hidden;
-  width : 80vw;
-  height : 45vw;
-  margin : 0vh;
-  color: ${props => props.theme.textLight};
-  background-color:${props => props.theme.backgroundSection};
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  &:hover{
+    box-shadow:  0px 0px 10px ${props => props.theme.backgroundTitle};;
+    
+  }
 
 
   @media only screen and (max-width: 600px) {
     width : 90vw;
     height : 120vw;
+    
+    
+  }
+
+  a{
+    text-decoration: none;
+    color: ${props => props.theme.textLight};
   }
 
 `;
+
+
+
 const ArticleHead = styled.div`
   text-align: left;
   text-anchor: middle;
@@ -66,6 +85,8 @@ const Imagestyled = styled.img`
 `;
 
 
+
+
 const VideoStyled = styled.video`
   width : 40vw;
   height: 40vw;
@@ -78,22 +99,25 @@ const VideoStyled = styled.video`
 `;
 
 
-const ArcticleSum = ({title , summary, img, video}) => {
+const ArcticleSum = ({title , summary, img, video, linkPath}) => {
   return(
-    <StyledSummary>
-      <ArticleHead> {title}</ArticleHead>
-      <ArticleBody>
-        <Summary>
-          {summary}
-        </Summary>
+    <StyledSummary >
+      <Link to = {linkPath}>
+      
+        <ArticleHead> {title}</ArticleHead>
+        <ArticleBody>
+          <Summary>
+            {summary}
+          </Summary>
 
-        {video
-        ? <VideoStyled src = {img}  alt = {title} autoPlay loop muted />
-        : <Imagestyled src = {img}  alt = {title}/>
-        }
-        
-        
-      </ArticleBody>
+          {video
+          ? <VideoStyled src = {img}  alt = {title} autoPlay loop muted />
+          : <Imagestyled src = {img}  alt = {title}/>
+          }
+          
+          
+        </ArticleBody>
+      </Link>
       
     </StyledSummary>
   )
@@ -103,6 +127,7 @@ ArcticleSum.propTypes = {
   title : PropTypes.string.isRequired,
   summary : PropTypes.string.isRequired,
   img : PropTypes.string.isRequired,
+  linkPath : PropTypes.string.isRequired,
 }
 
 
