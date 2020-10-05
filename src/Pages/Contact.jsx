@@ -71,10 +71,10 @@ const Contact = () => {
           <About>
             <Txt >
             Hi! My name is Nicolas Audepin and I am an engineering student from Paris. I try to find a way to mix my two passions, art and artificial intelligence. I am currently working on around a million projects and the most important one is called Sweet Dawn. It’s about the creation of an interactive art piece combining music, video and space in which you interact with an AI.
-            I am also currently participating on the Inktober and building this website myself.
+            I am also currently participating to the Inktober and building this website myself.
 
             </Txt>
-            <Imagestyled src = "/images/me.JPG" alt ="me"/>          
+            <Imagestyled src = "images/me.JPG" alt ="me"/>          
 
 
           </About>

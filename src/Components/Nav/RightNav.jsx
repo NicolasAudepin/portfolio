@@ -9,11 +9,12 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
 
   li {
-    padding: 18px 10px;
+    padding: 10px 10px;
 
   }
 
-  a{
+  li a{
+    font-size : 1.3em;
     color: ${props => props.theme.textLight};
     @media (max-width: 768px) {
       color: ${props => props.theme.textTitle};
