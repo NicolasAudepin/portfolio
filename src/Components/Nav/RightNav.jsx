@@ -15,9 +15,9 @@ const Ul = styled.ul`
 
 
   li:hover {
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 2px solid ${props => props.theme.borderLight};
     background-color: ${props => props.theme.backgroundTitle2};
-    border-top: 2px solid #FFFFFF;
+    border-top: 2px solid ${props => props.theme.borderLight};
   }
 
   @media (max-width: 768px) {

@@ -42,7 +42,7 @@ const ArticleHead = styled.div`
   text-anchor: middle;
   
   font-size : 2em;
-  
+  color : ${props => props.theme.textTitle};
   background-color: ${props => props.theme.backgroundTitle};
   height: 5vw;
   min-height: 50px;

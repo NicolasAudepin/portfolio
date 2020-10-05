@@ -20,7 +20,8 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${props => props.theme.borderLight};
+    background-color: ${({ open }) => open ? props => props.theme.textTitle : props => props.theme.textLight};
+  
     box-shadow: 0px 0px 5px 1px #000;
     border-radius: 10px;
     transform-origin: 1px;

@@ -7,7 +7,7 @@ const Nav = styled.nav`
   height: 40px;
   background-color:${props => props.theme.backgroundSection};
   color: ${props => props.theme.textLight};
-  border-bottom: 2px solid #CCCCCC;
+  border-bottom: 2px solid ${props => props.theme.borderLight};
   
   margin: 0px;
   padding: 10px;
