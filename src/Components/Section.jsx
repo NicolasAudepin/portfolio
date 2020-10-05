@@ -9,7 +9,7 @@ const BigSection = styled.section`
   display:flex;
   flex-direction: column;
   align-self: center;
-  align-content: center;
+  align-content:center;
 
   text-align: left;
   text-anchor: middle;
@@ -20,6 +20,7 @@ const BigSection = styled.section`
  
   
   width: 90%;
+  max-width: 900px;
   min-height: 10vh;
 
   color: ${props => props.theme.textLight};

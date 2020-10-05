@@ -9,27 +9,25 @@ const StyledSummary = styled.div`
     border-radius: 20px;
     overflow: hidden;
     width : 80vw;
+    max-width : 800px;
     height : 45vw;
+    max-height : 450px; 
 
     margin : 5px;
     color: ${props => props.theme.textLight};
     background-color:${props => props.theme.backgroundSection};
-
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   }
 
   &:hover{
-    box-shadow:  0px 0px 10px ${props => props.theme.backgroundTitle};;
-    
+    box-shadow:  0px 0px 10px ${props => props.theme.backgroundTitle};;    
   }
 
 
   @media only screen and (max-width: 600px) {
     width : 90vw;
-    height : 120vw;
-
-    
+    height : 120vw;    
+    max-height : 2000px; 
   }
 
   a{
@@ -38,8 +36,6 @@ const StyledSummary = styled.div`
   }
 
 `;
-
-
 
 const ArticleHead = styled.div`
   text-align: left;
@@ -50,6 +46,7 @@ const ArticleHead = styled.div`
   background-color: ${props => props.theme.backgroundTitle};
   height: 5vw;
   min-height: 50px;
+  max-height: 50px;
   
   
 `;
@@ -76,8 +73,8 @@ const Summary = styled.section`
 `;
 
 const Imagestyled = styled.img`
-  width : 40vw;
-  height: 40vw;
+  width : 50%;
+  height: auto;
 
   @media only screen and (max-width: 600px) {
     width: 100%;
@@ -90,9 +87,8 @@ const Imagestyled = styled.img`
 
 
 const VideoStyled = styled.video`
-  width : 40vw;
-  height: 40vw;
-
+  width : 50%;
+  height: auto;
   @media only screen and (max-width: 600px) {
     width: 100%;
     height:auto;

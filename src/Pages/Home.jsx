@@ -66,7 +66,7 @@ const Home = () => {
 
       <ArticleSum 
         title = "Museum Insta"
-        summary = "Three month of confinement is a lot of time. 
+        summary = "Three months of confinement is a lot of time. 
         I used this time to go back to my roots of creating 3D with Blender. 
         I gave myself the goal of creating a bit of content everyday until the end of the confinement and here are the results."
         img = "images/collage.png"

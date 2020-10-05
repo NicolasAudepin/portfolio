@@ -41,8 +41,7 @@ const RightNav = ({ open ,onclick}) => {
   return (
     <Ul open={open} onClick = {onclick}>
       <li><Link to = "/portfolio/home">Home</Link></li>
-      <li><Link to = "/portfolio/about">About Me</Link></li>
-      <li><Link to = "/portfolio/contact">Contact Me</Link></li>
+      <li><Link to = "/portfolio/contact">About Me</Link></li>
       <li><Link to = "/portfolio/portfolio">Portfolio</Link></li>
       <li><Link to = "/portfolio/curiculumvitae">Curiculum Vitae</Link></li>
     </Ul>
