@@ -52,7 +52,7 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
-      <RightNav open={open}/>
+      <RightNav onclick={() => setOpen(!open)} open={open}/>
     </>
   )
 }

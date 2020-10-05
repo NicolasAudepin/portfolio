@@ -4,7 +4,7 @@ import Burger from './Burger';
 
 const Nav = styled.nav`
   
-  height: 55px;
+  height: 40px;
   background-color:${props => props.theme.backgroundSection};
   color: ${props => props.theme.textLight};
   border-bottom: 2px solid #CCCCCC;

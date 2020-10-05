@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ArticleSum from '../Components/ArticleSum';
+import BigSection from '../Components/Section';
 
 
 
@@ -18,6 +19,14 @@ const Section = styled.section`
 const Home = () => {
   return(
     <Section>
+      <BigSection>
+        <section>
+          Hey! I'm Nicolas and welcome to my web page.
+          Here you can find pages about some of my projects.
+        </section>
+
+          
+      </BigSection>
       
 
 
@@ -67,7 +76,7 @@ const Home = () => {
       <ArticleSum 
         title = "Musical projects"
         summary = " I have always been doing music. Most of it is lost on some external drives."
-        img = "images/vcvrack.png"
+        img = "images/vcvrack.PNG"
         linkPath = "/portfolio/project/music"
       />
 

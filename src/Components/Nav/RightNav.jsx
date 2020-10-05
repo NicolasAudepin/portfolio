@@ -37,9 +37,9 @@ const Ul = styled.ul`
 
 
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open ,onclick}) => {
   return (
-    <Ul open={open}>
+    <Ul open={open} onClick = {onclick}>
       <li><Link to = "/portfolio/home">Home</Link></li>
       <li><Link to = "/portfolio/about">About Me</Link></li>
       <li><Link to = "/portfolio/contact">Contact Me</Link></li>
