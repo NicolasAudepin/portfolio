@@ -8,7 +8,8 @@ const Section = styled.section`
   display : flex;
   flex-direction : column;
   align-items : center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+
 
   
 `;
@@ -22,7 +23,9 @@ const Home = () => {
 
       <ArticleSum 
         title = "Inktober 2020"
-        summary = "This year I am following the internet challenge Inktober with my friend Dean.  "
+        summary = "This year I am following the internet challenge Inktober with my friend Dean. 
+        Every day of october I will be creating a short CGI video following a given theme and he will add music to it. 
+        For this year we are following licegateaux list of themes. "
         img = "videos/01prototype.mp4"
         linkPath = "/portfolio/project/SweetDawn"
         video
@@ -43,6 +46,31 @@ const Home = () => {
         img = "images/Classroom.JPG"
         linkPath = "/portfolio/project/classroom"
       />
+
+      <ArticleSum 
+        title = "Glitch Art"
+        summary = "I made an image editing software focussing on glitch aestetic.
+        I used it to create a massive amount of images in which I explore the numerical aspect of the images. "
+        img = "images/glitch.jpg"
+        linkPath = "/portfolio/project/glitchart"
+      />
+
+      <ArticleSum 
+        title = "Museum Insta"
+        summary = "Three month of confinement is a lot of time. 
+        I used this time to go back to my roots of creating 3D with Blender. 
+        I gave myself the goal of creating a bit of content everyday until the end of the confinement and here are the results."
+        img = "images/collage.png"
+        linkPath = "/portfolio/project/insta"
+      />
+
+      <ArticleSum 
+        title = "Musical projects"
+        summary = " I have always been doing music. Most of it is lost on some external drives."
+        img = "images/vcvrack.png"
+        linkPath = "/portfolio/project/music"
+      />
+
 
     </Section>
 

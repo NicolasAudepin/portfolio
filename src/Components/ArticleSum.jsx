@@ -10,7 +10,8 @@ const StyledSummary = styled.div`
     overflow: hidden;
     width : 80vw;
     height : 45vw;
-    margin : 0vh;
+
+    margin : 5px;
     color: ${props => props.theme.textLight};
     background-color:${props => props.theme.backgroundSection};
 
@@ -27,7 +28,7 @@ const StyledSummary = styled.div`
   @media only screen and (max-width: 600px) {
     width : 90vw;
     height : 120vw;
-    
+
     
   }
 
@@ -49,6 +50,7 @@ const ArticleHead = styled.div`
   background-color: ${props => props.theme.backgroundTitle};
   height: 5vw;
   min-height: 50px;
+  
   
 `;
 

@@ -16,6 +16,10 @@ const Nav = styled.nav`
   flex-direction: row;
   
 
+  a{
+    text-decoration: none;
+    color: ${props => props.theme.textLight};
+  }
   .logo {
     
   }
