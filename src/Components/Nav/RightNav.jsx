@@ -10,7 +10,14 @@ const Ul = styled.ul`
 
   li {
     padding: 18px 10px;
+
+  }
+
+  a{
     color: ${props => props.theme.textLight};
+    @media (max-width: 768px) {
+      color: ${props => props.theme.textTitle};
+    }
   }
 
 
@@ -31,6 +38,8 @@ const Ul = styled.ul`
     height: 100vh;
     width: 200px;
     transition: transform 0.3s ease-in-out;
+
+
 
   }
 `;
