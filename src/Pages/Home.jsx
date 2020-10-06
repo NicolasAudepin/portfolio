@@ -36,7 +36,7 @@ const Home = () => {
         Every day of october I will be creating a short CGI video following a given theme and he will add music to it. 
         For this year we are following licegateaux list of themes. "
         img = "videos/01prototype.mp4"
-        linkPath = "/portfolio/project/SweetDawn"
+        linkPath = "/portfolio/project/Inktober"
         video
       />
 
@@ -60,7 +60,7 @@ const Home = () => {
         title = "Glitch Art"
         summary = "I made an image editing software focussing on glitch aestetic.
         I used it to create a massive amount of images in which I explore the numerical aspect of the images. "
-        img = "images/glitch.jpg"
+        img = "/images/glitch.jpg"
         linkPath = "/portfolio/project/glitchart"
       />
 
