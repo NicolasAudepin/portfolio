@@ -36,7 +36,7 @@ const Home = () => {
         Every day of october I will be creating a short CGI video following a given theme and he will add music to it. 
         For this year we are following licegateaux list of themes. "
         img = "videos/01prototype.mp4"
-        linkPath = "/portfolio/project/Inktober"
+        linkPath = "/portfolio/projects/inktober"
         video
       />
 
@@ -45,7 +45,7 @@ const Home = () => {
         summary = "An ensemble of interactive art pieces combining deep learning, modular music and 3D. 
         They react to the public watching them like a game. "
         img = "images/sweet.png"
-        linkPath = "/portfolio/project/SweetDawn"
+        linkPath = "/portfolio/projects/sweetdawn"
       />
 
 
@@ -53,7 +53,7 @@ const Home = () => {
         title = "The Classroom"
         summary = "Deep learning generation mayhem "
         img = "images/Classroom.JPG"
-        linkPath = "/portfolio/project/classroom"
+        linkPath = "/portfolio/projects/classroom"
       />
 
       <ArticleSum 
@@ -61,7 +61,7 @@ const Home = () => {
         summary = "I made an image editing software focussing on glitch aestetic.
         I used it to create a massive amount of images in which I explore the numerical aspect of the images. "
         img = "/images/glitch.jpg"
-        linkPath = "/portfolio/project/glitchart"
+        linkPath = "/portfolio/projects/glitchart"
       />
 
       <ArticleSum 
@@ -70,14 +70,14 @@ const Home = () => {
         I used this time to go back to my roots of creating 3D with Blender. 
         I gave myself the goal of creating a bit of content everyday until the end of the confinement and here are the results."
         img = "images/collage.png"
-        linkPath = "/portfolio/project/insta"
+        linkPath = "/portfolio/projects/insta"
       />
 
       <ArticleSum 
         title = "Musical projects"
         summary = " I have always been doing music. Most of it is lost on some external drives."
         img = "images/vcvrack.PNG"
-        linkPath = "/portfolio/project/music"
+        linkPath = "/portfolio/projects/music"
       />
 
 

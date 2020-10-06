@@ -4,6 +4,7 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import NavBar from './Components/Nav/Navbar'
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
+import Inktober from './Pages/Projects/Inktober'
 import './App.css';
 import styled from 'styled-components';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path = "/portfolio/home" exact component = {() => <Home/>} />
           <Route path = "/" exact component = {() => <Home/>} />
           <Route path = "/portfolio/contact" exact component = {() => <Contact/>} />
+          <Route path = "/portfolio/projects/inktober" exact component = {() => <Inktober/>} />
           
 
         </Switch>                
