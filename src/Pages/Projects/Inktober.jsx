@@ -76,6 +76,20 @@ const InstaSec = styled.section`
   align-content:center;
 `;
 
+const Imagestyled = styled.img`
+  width : 50%;
+  height: auto;
+  margin: 3px;
+
+  @media only screen and (max-width: 600px) {
+    width : 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+`;
+
 
 
 const Inktober = () => { 
@@ -90,6 +104,7 @@ const Inktober = () => {
 
 
           </About>
+          <Imagestyled src="images/xalist.jpg" alt="Alice's Inktober list"/>
         </Limitedwidth> 
       </BigSection>
       <InstaSec>
