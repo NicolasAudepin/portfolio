@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ArticleSum from '../Components/ArticleSum';
 import BigSection from '../Components/Section';
 
 
@@ -79,7 +80,7 @@ const Contact = () => {
           </About>
 
           <section>
-            You can contact me by sending me a mail at nicolas.audpein@gmail.com          
+            You can contact me by sending me a mail at nicolas.audepin@gmail.com          
         
           </section>
           <section>

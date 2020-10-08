@@ -60,7 +60,7 @@ const Home = () => {
         title = "Glitch Art"
         summary = "I made an image editing software focussing on glitch aestetic.
         I used it to create a massive amount of images in which I explore the numerical aspect of the images. "
-        img = "/images/glitch.jpg"
+        img = "images/glitch.jpg"
         linkPath = "/portfolio/projects/glitchart"
       />
 
@@ -77,7 +77,7 @@ const Home = () => {
         title = "Musical projects"
         summary = " I have always been doing music. Most of it is lost on some external drives."
         img = "images/vcvrack.PNG"
-        linkPath = "/portfolio/projects/music"
+        linkPath = "/portfolio/project/music"
       />
 
 
