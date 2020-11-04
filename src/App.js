@@ -1,12 +1,14 @@
 import React from 'react';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom'
+import './App.css';
+import styled from 'styled-components';
 
 import NavBar from './Components/Nav/Navbar'
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
+
 import Inktober from './Pages/Projects/Inktober'
-import './App.css';
-import styled from 'styled-components';
+import SweetDawn from './Pages/Projects/SweetDawn';
 
 const StyledApp = styled.div`
   background-color: ${props => props.theme.backgroundMain};
@@ -24,6 +26,7 @@ function App() {
           <Route path = "/" exact component = {() => <Home/>} />
           <Route path = "/portfolio/contact" exact component = {() => <Contact/>} />
           <Route path = "/portfolio/projects/inktober" exact component = {() => <Inktober/>} />
+          <Route path = "/portfolio/projects/sweetdawn" exact component = {() => <SweetDawn/>} />
           
 
         </Switch>                

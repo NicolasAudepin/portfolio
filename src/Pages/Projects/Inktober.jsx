@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import BigSection from '../../Components/Section';
+import {BigSection,Limitedwidth} from '../../Components/Section';
 import PostInsta from '../../Components/PostInsta';
 
 
@@ -173,14 +173,7 @@ const Section = styled.section`
   justify-content: flex-start;
 `;
 
-const Limitedwidth = styled.div`
-  max-width: 700px;
-  align-self: center;
 
-  a{    
-    color: ${props => props.theme.borderLight};
-  }
-`;
 const About = styled.div`
   display: flex;
   flex-direction: row;

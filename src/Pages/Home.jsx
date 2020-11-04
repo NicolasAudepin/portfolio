@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ArticleSum from '../Components/ArticleSum';
-import BigSection from '../Components/Section';
+import {BigSection,Limitedwidth} from '../Components/Section';
 
 
 

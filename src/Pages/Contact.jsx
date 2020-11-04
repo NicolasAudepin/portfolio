@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ArticleSum from '../Components/ArticleSum';
-import BigSection from '../Components/Section';
+import {BigSection,Limitedwidth} from '../Components/Section';
 
 
 
@@ -15,15 +15,7 @@ const Section = styled.section`
   
 `;
 
-const Limitedwidth = styled.div`
-  max-width: 700px;
-  align-self: center;
 
-  a{
-    
-    color: ${props => props.theme.borderLight};
-  }
-`;
 
 const About = styled.div`
   display: flex;

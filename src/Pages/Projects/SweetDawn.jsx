@@ -1,141 +1,81 @@
 import React from 'react';
 import styled from 'styled-components';
-import BigSection from '../../Components/Section';
+import {VariableArticleList,MargedSection} from '../../Components/Section';
 import PostInsta from '../../Components/PostInsta';
 
 
 
-
-
-const linkslist = [
-  {
-    "url" : 'https://www.instagram.com/p/CFz_N8kC8HR/',
-    "day" : 1,
-    "theme": 'PROTOTYPE'
-  },
-  {
-    "url" : 'https://www.instagram.com/p/CF2hCWkiLTc/',
-    "day" : 2,
-    "theme": 'FOU RIRE'
-  },
-  {
-    "url" : 'https://www.instagram.com/p/CF4tqxuC8JI/',
-    "day" : 3,
-    "theme": 'PIGEON'
-  },
-  {
-    "url" : 'https://www.instagram.com/p/CF7LMiBi7nj/',
-    "day" : 4,
-    "theme": 'SYMBIOSE'
-  },
-  {
-    "url" : 'https://www.instagram.com/p/CF93ct5C2X5/',
-    "day" : 5,
-    "theme": 'POT'
-  },  
- 
-  ]
-
-
-const Section = styled.section`
+const Page = styled.section`
   display : flex;
   flex-direction : column;
   align-items : center;
   justify-content: flex-start;
 `;
 
-const Limitedwidth = styled.div`
-  max-width: 700px;
-  align-self: center;
-
-  a{    
-    color: ${props => props.theme.borderLight};
-  }
+const SecTitle = styled.div`
+  font-size : larger;
+  font-weight: bold;
+  margin : 10px;
 `;
-const About = styled.div`
-  display: flex;
-  flex-direction: row;
-  
-  justify-content: center;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-
-  margin: 3px;  
-`;
-
-
-const FeedInsta = styled.section`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-self:center;
-    justify-content: center;
-`;
-const InstaSec = styled.section`
-  display:flex;
-  flex-direction:column;
-  align-content:center;
-`;
-
-const Txt = styled.div`
-  width : 50%;
-
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    height:auto;
-    display: block;
-  }
-`;
-
-const Imagestyled = styled.img`
-  width : 50%;
-  height: auto;
-  margin: 3px;
-
-  @media only screen and (max-width: 600px) {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-  }
-`;
-
 
 
 
 const SweetDawn = () => { 
   return(
-    <Section>
-      <BigSection>
-        <Limitedwidth>
-          <About>
-          
-            <Txt >
-            Sweet Dream
-            </Txt>
-                   
-            
+    <Page>
+      <MargedSection
+        stuff = {
+          <div>
+            <div>
+                I have always been intrested in two things: Art and Science. 
+                Both seems to head in opposite directions but always end up colliding.
+                Sweet Dawn is one of those collision.   
+              </div>
+              <div>      
 
-          </About>
-        </Limitedwidth> 
-      </BigSection>
-      <InstaSec>
-        <FeedInsta>
-          {linkslist.map(({url,day,theme},index) => (
-            <PostInsta 
-              url = {url}
-              day = {day}
-              theme = {theme}
-            />
-            ))
-          }
-        </FeedInsta> 
-      </InstaSec>
-               
-                
+                The goal of Sweet Dawn is to create a corpus of interactive art pieces 
+                allowing an active audiance to play visually with artificial intelligences.
 
-    </Section>
+              </div>
+              <div>
+                During my last year in engineering school came most of the ideas behind this project.
+                Event + DJ interaction avec public
+                deep 
+                musique 
+                art instead of ingé
+              </div>
+          </div>
+        }
+      />
+
+
+      <VariableArticleList>
+        <section>
+          <SecTitle>Sweet Arpegiato</SecTitle>
+          <div>
+            This is the first prototype of interactive piece.
+            It connects the YOLO v3 algorithm to a generated arpegio.
+            The more people it sees, the fuller the Arpegiato.
+          </div>
+        </section>
+        <section>
+          <SecTitle>Sweet Arpegiato</SecTitle>
+          <div>
+            This is the first prototype of interactive piece.
+            It connects the YOLO v3 algorithm to a generated arpegio.
+            The more people it sees, the fuller the Arpegiato.
+          </div>
+        </section>
+        <section>
+          All of the expriments are coded by myself using python. But I re-used some algorithms.
+        </section>
+        <section>
+          Most of the soundscapes are made using the free software VCV Rack.
+        </section>
+
+      </VariableArticleList>
+
+    </Page>
   )
  }
 
