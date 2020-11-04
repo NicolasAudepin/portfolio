@@ -57,6 +57,7 @@ const SweetDawn = () => {
             It connects the YOLO v3 algorithm to a generated arpegio.
             The more people it sees, the fuller the Arpegiato.
           </div>
+          <img src =  "images/SweetDawn/sweet arp photo.PNG" />
         </section>
         <section>
           <SecTitle>Sweet Arpegiato</SecTitle>
