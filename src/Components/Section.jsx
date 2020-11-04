@@ -54,15 +54,17 @@ const MargedSection = ({stuff}) => {
   )
 } 
 
+
 const VariableArticleList = styled.section`
   display:flex;
   flex-direction:row;
   align-content:center;
   flex-wrap: wrap;
+  max-width : 1400px;
   
 
   section{
-    max-width : 600px;
+    max-width : 700px;
     flex-direction: column;   
     align-content:left;
     text-align: left;

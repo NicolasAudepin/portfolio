@@ -53,7 +53,7 @@ const RightNav = ({ open ,onclick}) => {
       <li><Link to = "/portfolio/home">Home</Link></li>
       <li><Link to = "/portfolio/contact">About Me</Link></li>
       <li><Link to = "/portfolio/portfolio">Portfolio</Link></li>
-      <li><Link to = "/portfolio/curiculumvitae">Curiculum Vitae</Link></li>
+      <li><Link to = "/portfolio/curriculumvitae">Curriculum Vitae</Link></li>
     </Ul>
   )
 }
