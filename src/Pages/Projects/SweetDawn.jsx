@@ -53,6 +53,7 @@ const SweetDawn = () => {
           </div>
           <img src =  "images/SweetDawn/sweet arp photo.PNG" />
         </section>
+        
 
         <section style={{maxWidth: '200px',maxHeight: '100px'}}>
           Most of the soundscapes are generated live using the free software VCV Rack in collaboration with my friend Dean.
