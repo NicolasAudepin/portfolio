@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {BigSection,Limitedwidth} from '../../Components/Section';
+import {BigSection,Limitedwidth,Oups} from '../../Components/Section';
 import PostInsta from '../../Components/PostInsta';
 
 
@@ -210,6 +210,8 @@ const Txt = styled.div`
   }
 `;
 
+
+
 const Imagestyled = styled.img`
   width : 50%;
   height: auto;
@@ -239,13 +241,18 @@ const Inktober = () => {
             For this challenge I am working in duo with my friend <a href="https://www.instagram.com/dimbymaxime/">@Dimbymaxime</a> who is doing the audio for each of the videos and we are following the list of themes by <a href="https://www.instagram.com/licegateaux/">@Licegateaux</a>. 
 
             </Txt>
-            <Imagestyled src="images/xalist.jpg" alt="Alice's Inktober list"/>       
+            <Imagestyled src={process.env.PUBLIC_URL + "/images/xalist.jpg" }alt="Alice's Inktober list"/>       
             
 
           </About>
         </Limitedwidth> 
       </BigSection>
       <InstaSec>
+        <Oups>
+          Instagram decided to change their API two weeks after I finished this part and it broke everything.
+          I will update this when comprehensible tutorials about the new API are writen. 
+          In the meanwhile you can go directly on my instagram page <a href="https://www.instagram.com/nicolasaudepin/">you can go directly on my instagram page (@nicolasaudepin)</a>
+        </Oups>
         <FeedInsta>
           {linkslist.map(({url,day,theme},index) => (
             <PostInsta 

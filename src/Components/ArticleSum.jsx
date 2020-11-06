@@ -83,9 +83,6 @@ const Imagestyled = styled.img`
   }
 `;
 
-
-
-
 const VideoStyled = styled.video`
   width : 50%;
   height: auto;
@@ -109,8 +106,8 @@ const ArcticleSum = ({title , summary, img, video, linkPath}) => {
           </Summary>
 
           {video
-          ? <VideoStyled src = {img}  alt = {title} autoPlay loop muted />
-          : <Imagestyled src = {img}  alt = {title}/>
+          ? <VideoStyled src = {process.env.PUBLIC_URL + img}  alt = {title} autoPlay loop muted />
+          : <Imagestyled src = {process.env.PUBLIC_URL + img}  alt = {title}/>
           }
           
           

@@ -55,11 +55,13 @@ const MargedSection = ({stuff}) => {
 
 
 const VariableArticleList = styled.section`
+  max-width : 1400px;
   display:flex;
   flex-direction:row;
-  align-content:center;
   flex-wrap: wrap;
-  max-width : 1400px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content:center;
   
 
   section{
@@ -77,6 +79,32 @@ const VariableArticleList = styled.section`
   }
 `;
 
+const Page = styled.section`
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  justify-content: flex-start;
+`;
+
+const Oups  = styled.div`
+
+  position: relative;
+  top: 110px;
+  right: -10%;
+  width: 80%;
+  border: 5px solid red;
+  padding: 10px;
+
+  color : red;
+  background-color:${props => props.theme.backgroundSection};
+
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  a{    
+    color : red;
+  }
+`;
+
 //put the Limitedwidth in a BigSection
 
-export {BigSection,Limitedwidth, MargedSection,VariableArticleList}; 
+export {BigSection,Limitedwidth, MargedSection,VariableArticleList,Oups,Page}; 

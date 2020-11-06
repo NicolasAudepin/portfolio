@@ -9,7 +9,7 @@ import Contact from './Pages/Contact'
 
 import Inktober from './Pages/Projects/Inktober'
 import SweetDawn from './Pages/Projects/SweetDawn';
-
+import GlitchArt from './Pages/Projects/GlitchArt';
 
 
 const StyledApp = styled.div`
@@ -29,6 +29,9 @@ function App() {
           <Route path = "/portfolio/contact" exact component = {() => <Contact/>} />
           <Route path = "/portfolio/projects/inktober" exact component = {() => <Inktober/>} />
           <Route path = "/portfolio/projects/sweetdawn" exact component = {() => <SweetDawn/>} />
+          <Route path = "/portfolio/projects/glitchart" exact component = {() => <GlitchArt/>} />
+
+          
           
 
         </Switch>                
