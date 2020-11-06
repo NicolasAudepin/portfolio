@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {VariableArticleList,MargedSection} from '../../Components/Section';
-import PostInsta from '../../Components/PostInsta';
+
 
 
 
@@ -51,9 +51,9 @@ const SweetDawn = () => {
             It connects the YOLO v3 algorithm to a generated arpegio.
             The more people it sees, the fuller the Arpegiato.
           </div>
-          <img src =  "images/SweetDawn/sweet arp photo.PNG" />
+          <img src =  "images/SweetDawn/sweet arp photo.PNG" alt = "me on a bike"/>
         </section>
-        
+
 
         <section style={{maxWidth: '200px',maxHeight: '100px'}}>
           Most of the soundscapes are generated live using the free software VCV Rack in collaboration with my friend Dean.

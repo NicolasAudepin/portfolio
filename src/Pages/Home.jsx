@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ArticleSum from '../Components/ArticleSum';
-import {BigSection,Limitedwidth} from '../Components/Section';
+import {BigSection} from '../Components/Section';
 
 
 
@@ -28,6 +28,13 @@ const Home = () => {
           
       </BigSection>
       
+      <ArticleSum
+        title = "TEST"
+        summary = "TEXT FOR THE TEST"
+        img = {process.env.PUBLIC_URL + "/images/sweet.png"}
+        linkPath=""
+
+      />
 
 
       <ArticleSum 
