@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import NavBar from './Components/Nav/Navbar'
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
+import CurriculumPage   from './Pages/CurriculumPage'
 
 import Inktober from './Pages/Projects/Inktober'
 import SweetDawn from './Pages/Projects/SweetDawn';
@@ -25,6 +26,7 @@ function App() {
         <NavBar/>
         <Switch>
           <Route path = "/portfolio/home" exact component = {() => <Home/>} />
+          <Route path = "/portfolio/curriculumvitae" exact component = {() => <CurriculumPage/>} />
           <Route path = "/" exact component = {() => <Home/>} />
           <Route path = "/portfolio/contact" exact component = {() => <Contact/>} />
           <Route path = "/portfolio/projects/inktober" exact component = {() => <Inktober/>} />
