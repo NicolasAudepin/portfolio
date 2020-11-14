@@ -11,8 +11,10 @@
     "react": "^16.13.1",
     "react-alice-carousel": "^2.0.2",
     "react-dom": "^16.13.1",
+    "react-download-link": "^2.3.0",
     "react-html2pdf": "^1.0.1",
     "react-instagram-embed": "^1.5.0",
+    "react-pdf": "^5.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
     "styled-components": "^5.2.0"

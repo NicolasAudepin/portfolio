@@ -2,19 +2,17 @@
 import styled,{ css } from 'styled-components';
 import {VariableArticleList,MargedSection,Page} from '../Components/Section';
 import CV from '../Components/CV';
-import { Preview, print } from 'react-html2pdf';
 
 
 import React, { Component } from 'react';
 
-const PreviewDiv = styled(Preview)`
-    width: 200px;
-    height: 400px;
-    display: block;
-    border: 10px ;
-    background-color: yellow;
-  
-  `;
+
+const CVstyled = styled(CV)`
+  margin: 10px;
+  border: 10px;
+  border-color:red;
+  background-color:blue;
+`;
 
 class CurriculumPage extends Component {
   
@@ -28,10 +26,9 @@ class CurriculumPage extends Component {
   render(){
     return (
       <Page>
-        <PreviewDiv id={'cv'} >
-            <CV/>
-        </PreviewDiv>
-        <button onClick={()=>print('CV_Nicolas_AUDEPIN', 'cv')}> print</button>
+        
+        <CVstyled/>
+        
       </Page>
       
 
