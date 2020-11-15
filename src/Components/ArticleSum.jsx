@@ -40,6 +40,7 @@ const StyledSummary = styled.div`
 const ArticleHead = styled.div`
   text-align: left;
   text-anchor: middle;
+  padding-left:9px;
   
   font-size : 2em;
   color : ${props => props.theme.textTitle};
@@ -79,7 +80,7 @@ const Imagestyled = styled.img`
   @media only screen and (max-width: 600px) {
     width: 100%;
     height:auto;
-    display: block;
+    
   }
 `;
 
@@ -89,7 +90,7 @@ const VideoStyled = styled.video`
   @media only screen and (max-width: 600px) {
     width: 100%;
     height:auto;
-    display: block;
+    
   }
 `;
 

@@ -1,18 +1,12 @@
 
 import styled,{ css } from 'styled-components';
-import {VariableArticleList,MargedSection,Page} from '../Components/Section';
+import {VariableArticleList,HorizontalScroll,Page} from '../Components/Section';
 import CV from '../Components/CV';
-
+import {SimpleButton} from '../Components/SimpleComponents'
 
 import React, { Component } from 'react';
 
 
-const CVstyled = styled(CV)`
-  margin: 10px;
-  border: 10px;
-  border-color:red;
-  background-color:blue;
-`;
 
 class CurriculumPage extends Component {
   
@@ -20,14 +14,22 @@ class CurriculumPage extends Component {
     super(props);
   }
 
+  state = {
+    pathinpublic: "/pdfs/CV_Nicolas_Audepin.pdf",
+  }
+
   
 
- 
+
   render(){
+    const {pathinpublic } = this.state;
     return (
       <Page>
-        
-        <CVstyled/>
+        <SimpleButton href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Donwload CV</SimpleButton>
+        <HorizontalScroll>         
+          <CV pathinpublic = {pathinpublic} />
+        </HorizontalScroll>
+        <SimpleButton href = {process.env.PUBLIC_URL +pathinpublic} target="_blank" >Donwload CV</SimpleButton>
         
       </Page>
       

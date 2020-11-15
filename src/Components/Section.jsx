@@ -94,7 +94,6 @@ const Oups  = styled.div`
   width: 80%;
   border: 5px solid red;
   padding: 10px;
-
   color : red;
   background-color:${props => props.theme.backgroundSection};
 
@@ -105,6 +104,14 @@ const Oups  = styled.div`
   }
 `;
 
+const HorizontalScroll = styled.section`
+  display: flex;
+  max-width:100%;
+  overflow-x:scroll;
+  
+
+`;
+
 //put the Limitedwidth in a BigSection
 
-export {BigSection,Limitedwidth, MargedSection,VariableArticleList,Oups,Page}; 
+export {BigSection,Limitedwidth, MargedSection,VariableArticleList,Oups,Page,HorizontalScroll}; 
