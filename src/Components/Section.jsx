@@ -68,6 +68,7 @@ const VariableArticleList = styled.section`
     max-width : 700px;
     flex-direction: column;   
     align-content:left;
+    align-items: flex-start; 
     text-align: left;
     margin : 10px;
     border : 30px;

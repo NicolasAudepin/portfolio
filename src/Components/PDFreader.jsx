@@ -4,7 +4,7 @@ import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import styled from 'styled-components';
 
 const StyledDoc = styled(Document)`
-display: flex;
+
 box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.5);
 `;
 
