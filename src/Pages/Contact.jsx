@@ -61,7 +61,7 @@ const Contact = () => {
       <Limitedwidth>
           <About>
             <Txt >
-            Hi! My name is Nicolas Audepin and I am an engineering student from Paris. I try to find a way to mix my two passions, art and artificial intelligence. 
+            Hi! My name is Nicolas Audepin and I am young engineer/artist from Paris. I search for ways to mix my two passions, art and artificial intelligence. 
             I am currently working on around a million projects and the most important one is called Sweet Dawn. 
             It’s about the creation of an interactive art piece combining music, video and space in which you interact with an AI.
             I am also currently participating to the Inktober and building this website myself.
@@ -73,11 +73,11 @@ const Contact = () => {
           </About>
 
           <section>
-            You can contact me by sending me a mail at nicolas.audepin@gmail.com          
+            You can contact me by sending me a mail at <a href="">nicolas.audepin@gmail.com</a>     
         
           </section>
           <section>
-            If you prefere you can contact me on those social networks:    
+            Those are my social networks:    
             <ul>
               <li><a href="https://www.linkedin.com/in/nicolas-audepin-619a0213a/">LinkedIn</a>  </li>
               <li><a href="https://github.com/NicolasAudepin">Github</a></li>
