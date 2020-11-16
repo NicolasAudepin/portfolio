@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import styled,{ css } from 'styled-components';
 
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 
-class CV extends Component {
+class PDFreader extends Component {
   state = {
     numPages: null,
     pageNumber: 1,
@@ -24,6 +23,10 @@ class CV extends Component {
     });
     }, 2000);
 
+    pagefunc(pageNumber) {
+      return (<Page pageNumber={pageNumber} />);
+    }
+
   render() {
     const { pageNumber, numPages } = this.state;
 
@@ -34,12 +37,18 @@ class CV extends Component {
       <Document
         file={process.env.PUBLIC_URL + this.props.pathinpublic}
         onLoadSuccess={this.onDocumentLoadSuccess}
+        loading = {
+        <div>
+          <p>Loading the PDF.</p>
+          <p>If nothing shows up after a few seconds refresh this page or use the download button.</p>
+        </div>}
       >
-        <Page pageNumber={pageNumber} />
+        {this.props.pagelist ? this.props.pagelist.map(this.pagefunc) : <Page pageNumber={pageNumber} />} 
+        
       </Document>
       
     );
   }
 }
 
-export default CV;
+export default PDFreader;

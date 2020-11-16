@@ -1,8 +1,7 @@
 
-import styled,{ css } from 'styled-components';
-import {VariableArticleList,HorizontalScroll,Page} from '../Components/Section';
-import CV from '../Components/CV';
-import {SimpleButton} from '../Components/SimpleComponents'
+import {HorizontalScroll,Page} from '../Components/Section';
+import PDFreader from '../Components/PDFreader';
+import {SimpleButton,SimpleLink} from '../Components/SimpleComponents'
 
 import React, { Component } from 'react';
 
@@ -16,20 +15,28 @@ class CurriculumPage extends Component {
 
   state = {
     pathinpublic: "/pdfs/Portfolio2020.pdf",
+    showall: false,
   }
 
   
-
+  swithShowAll = () => {
+    this.setState({ showall: !this.state.showall})
+  }
 
   render(){
-    const {pathinpublic } = this.state;
+    const {pathinpublic,showall } = this.state;
     return (
       <Page>
-        <SimpleButton href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Donwload Portfolio</SimpleButton>
-        <HorizontalScroll>         
-          <CV pathinpublic = {pathinpublic} />
+        <div style={{display:'flex',flexDirection:'row'}}>
+          <SimpleButton onClick = {this.swithShowAll}>{showall ? "Hide Portfolio":"Show full Portfolio"}</SimpleButton>
+          <SimpleLink href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Donwload Portfolio</SimpleLink>
+
+        </div>
+        <HorizontalScroll>  
+
+          <PDFreader pathinpublic = {pathinpublic} pagelist = {showall ? [1,2,3,4,5,6,7,8,9]:[1]} />
         </HorizontalScroll>
-        <SimpleButton href = {process.env.PUBLIC_URL +pathinpublic} target="_blank" >Donwload Portfolio</SimpleButton>
+        <SimpleLink href = {process.env.PUBLIC_URL +pathinpublic} target="_blank" >Donwload Portfolio</SimpleLink>
         
       </Page>
       

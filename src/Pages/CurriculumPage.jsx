@@ -1,8 +1,6 @@
-
-import styled,{ css } from 'styled-components';
 import {VariableArticleList,HorizontalScroll,Page} from '../Components/Section';
-import CV from '../Components/CV';
-import {SimpleButton} from '../Components/SimpleComponents'
+import PDFreader from '../Components/PDFreader';
+import {SimpleLink} from '../Components/SimpleComponents'
 
 import React, { Component } from 'react';
 
@@ -25,11 +23,11 @@ class CurriculumPage extends Component {
     const {pathinpublic } = this.state;
     return (
       <Page>
-        <SimpleButton href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Donwload CV</SimpleButton>
+        <SimpleLink href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Donwload CV</SimpleLink>
         <HorizontalScroll>         
-          <CV pathinpublic = {pathinpublic} />
+          <PDFreader pathinpublic = {pathinpublic} />
         </HorizontalScroll>
-        <SimpleButton href = {process.env.PUBLIC_URL +pathinpublic} target="_blank" >Donwload CV</SimpleButton>
+        <SimpleLink href = {process.env.PUBLIC_URL +pathinpublic} target="_blank" >Donwload CV</SimpleLink>
         
       </Page>
       
