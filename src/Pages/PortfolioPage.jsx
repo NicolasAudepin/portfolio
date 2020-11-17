@@ -2,7 +2,7 @@
 import {Page} from '../Components/Section';
 import PDFreader from '../Components/PDFreader';
 import {SimpleButton,SimpleLink} from '../Components/SimpleComponents'
-
+import { withRouter } from "react-router";
 import React, { Component } from 'react';
 
 
@@ -15,13 +15,18 @@ class CurriculumPage extends Component {
     const resizeObserver = new ResizeObserver(entries => {
       console.log('Body height changed:', entries[0].target.clientHeight)
       const bh = entries[0].target.clientHeight;
-      if (this.state.showall) {
-        const scroll =  Math.floor(this.pagewidth());  
-        window.scrollTo({ top: scroll,behavior:"smooth" });
+      if(this.state.mustscroll){
+        if (this.state.showall) {
+          const scroll =  Math.floor(this.pagewidth());  
+          window.scrollTo({ top: scroll,behavior:"smooth" });
+        }
+        else{
+          
+          window.scrollTo({ top: 0,behavior:"smooth" });
+        }
+        this.setState({ mustscroll:false})
       }
-      else{
-        window.scrollTo({ top: 0,behavior:"smooth" });
-      }
+
       
       console.log('scroll pos',window.scrollY) }     
     )
@@ -32,6 +37,7 @@ class CurriculumPage extends Component {
   state = {
     pathinpublic: "/pdfs/Portfolio2020.pdf",
     showall: false,
+    mustscroll:false,
 
   }
 
@@ -40,8 +46,8 @@ class CurriculumPage extends Component {
   };
   
   switchShowAll = () => {
-    this.setState({ showall: !this.state.showall})
-
+    this.setState({ showall: !this.state.showall , mustscroll:true})
+    
   }
 
   render(){
@@ -74,4 +80,4 @@ class CurriculumPage extends Component {
   
 }
 
-export default CurriculumPage;
+export default withRouter(CurriculumPage);

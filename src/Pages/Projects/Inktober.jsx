@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {BigSection,Limitedwidth,Oups} from '../../Components/Section';
 import PostInsta from '../../Components/PostInsta';
-
+import YouTube from 'react-youtube';
 
 
 
@@ -227,8 +227,16 @@ const Imagestyled = styled.img`
 
 
 
+const videowidth = ()=>{
+  return(
+    Math.min(600,window.screen.availWidth-10)
+
+  )
+}
 
 const Inktober = () => { 
+
+
   return(
     <Section>
       <BigSection>
@@ -236,10 +244,10 @@ const Inktober = () => {
           <About>
           
             <Txt >
-            I'm doing the Inktober 2020 on <a href="https://www.instagram.com/nicolasaudepin/">my Instagram (@nicolasaudepin)</a>  . It is an internet challenge for artists with a bit too much time on their hands.
+            I did the Inktober 2020 on <a href="https://www.instagram.com/nicolasaudepin/">my Instagram (@nicolasaudepin)</a>  . It is an internet challenge for artists with a bit too much time on their hands.
             Everyday of October we must do one drawing (or small animation in my case) following that day's theme.
-            For this challenge I am working in duo with my friend <a href="https://www.instagram.com/dimbymaxime/">@Dimbymaxime</a> who is doing the audio for each of the videos and we are following the list of themes by <a href="https://www.instagram.com/licegateaux/">@Licegateaux</a>. 
-
+            For this challenge I worked in duo with my friend <a href="https://www.instagram.com/dimbymaxime/">@Dimbymaxime</a> who is doing the audio for each of the videos and we are following the list of themes by <a href="https://www.instagram.com/licegateaux/">@Licegateaux</a>. 
+            It was quite intense for both of us to keep up with the themes day by day but we learned so much. 
             </Txt>
             <Imagestyled src={process.env.PUBLIC_URL + "/images/xalist.jpg" }alt="Alice's Inktober list"/>       
             
@@ -247,6 +255,9 @@ const Inktober = () => {
           </About>
         </Limitedwidth> 
       </BigSection>
+
+      <YouTube videoId="AlsmXGvxwIw" opts={{width: videowidth(),height: videowidth()}}/>
+
       <InstaSec>
         <Oups>
           Instagram decided to change their API two weeks after I finished this part and it broke everything.

@@ -16,6 +16,8 @@ const Foreground = styled.section`
   display:flex;
   flex-direction:column;
   position:absolute;
+  width:100%;
+  overflow:hidden;
   
   z-index:10;
 `;
@@ -29,6 +31,16 @@ const TextSection = styled.section`
 
 `;
 
+const TitleSextion = styled.section`
+  display:flex;
+  position:absolute;
+  left: 0px;
+  background-color: rgba(0,0,0,0.5); 
+  color : ${props => props.theme.backgroundSection};
+  margin:10px;
+  padding:10px;
+  font-size:400%;
+`;
 
 const BigImage = styled.img`
   
@@ -55,8 +67,9 @@ const GlitchArt = () => {
         </Background>
 
         <Foreground>
+          <TitleSextion>Glitch_Art_v1</TitleSextion>
           <TextSection>
-            aaaaaaaaaah
+            I made a tool to create images.
           </TextSection>
         </Foreground>
   
