@@ -227,10 +227,21 @@ const Imagestyled = styled.img`
 
 
 
+const ImageBackground = styled(Section)`
+  
+  background-image : url(${process.env.PUBLIC_URL +"/images/Inktober/backgroundHD.png"}) ; /* The image used */
+  background-color: #9c0000; /* Used if the image is unavailable */
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+`;
+
+
 const videowidth = ()=>{
   return(
     Math.min(600,window.screen.availWidth-10)
-
+    
   )
 }
 
@@ -238,9 +249,10 @@ const Inktober = () => {
 
 
   return(
-    <Section>
-      <BigSection>
-        <Limitedwidth>
+    <ImageBackground >
+
+      <BigSection >
+        <Limitedwidth  >
           <About>
           
             <Txt >
@@ -249,22 +261,23 @@ const Inktober = () => {
             For this challenge I worked in duo with my friend <a href="https://www.instagram.com/dimbymaxime/">@Dimbymaxime</a> who is doing the audio for each of the videos and we are following the list of themes by <a href="https://www.instagram.com/licegateaux/">@Licegateaux</a>. 
             It was quite intense for both of us to keep up with the themes day by day but we learned so much. 
             </Txt>
-            <Imagestyled src={process.env.PUBLIC_URL + "/images/xalist.jpg" }alt="Alice's Inktober list"/>       
+            <Imagestyled src={process.env.PUBLIC_URL + "/images/Inktober/xalist.jpg" }alt="Alice's Inktober list"/>       
             
 
           </About>
         </Limitedwidth> 
       </BigSection>
-
-      <YouTube videoId="AlsmXGvxwIw" opts={{width: videowidth(),height: videowidth()}}/>
-
+      <div >
+        <YouTube videoId="AlsmXGvxwIw" opts={{width: videowidth(),height: videowidth()}}  />
+      </div>
+      
       <InstaSec>
-        <Oups>
+        <Oups >
           Instagram decided to change their API two weeks after I finished this part and it broke everything.
           I will update this when comprehensible tutorials about the new API are writen. 
           In the meanwhile you can go directly on my instagram page <a href="https://www.instagram.com/nicolasaudepin/">you can go directly on my instagram page (@nicolasaudepin)</a>
         </Oups>
-        <FeedInsta>
+        <FeedInsta >
           {linkslist.map(({url,day,theme},index) => (
             <PostInsta 
               url = {url}
@@ -275,10 +288,12 @@ const Inktober = () => {
           }
         </FeedInsta> 
       </InstaSec>
+    
+      
                
                 
 
-    </Section>
+    </ImageBackground>
   )
  }
 
