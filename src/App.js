@@ -15,6 +15,8 @@ import Inktober from './Pages/Projects/Inktober'
 import SweetDawn from './Pages/Projects/SweetDawn';
 import GlitchArt from './Pages/Projects/GlitchArt';
 
+import { builder, BuilderComponent } from '@builder.io/react';
+
 const StyledApp = styled.div`
   background-color: ${props => props.theme.backgroundMain};
 
@@ -29,6 +31,10 @@ class App extends Component {
 
 
   render(){
+    
+
+    builder.init("e39eca09b6a0499cb19c8b37cb873437");
+
     return (
       <StyledApp className="App">
         <Router className="App-header" >
@@ -42,8 +48,8 @@ class App extends Component {
             <Route path = "/portfolio/contact" exact component = {() => <Contact/>} />
             <Route path = "/portfolio/projects/inktober" exact component = {() => <Inktober/>} />
             <Route path = "/portfolio/projects/sweetdawn" exact component = {() => <SweetDawn/>} />
-            <Route path = "/portfolio/projects/glitchart" exact component = {() => <GlitchArt/>} />
-  
+            <Route path="/portfolio/projects/glitchart" render={() => <BuilderComponent model="page" url="/glitch-art" />}></Route>
+            
             
             
   
@@ -55,3 +61,4 @@ class App extends Component {
 }
 
 export default App;
+

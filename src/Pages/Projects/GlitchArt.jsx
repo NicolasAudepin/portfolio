@@ -3,6 +3,9 @@ import styled,{ css } from 'styled-components';
 import {VariableArticleList,MargedSection,Page} from '../../Components/Section';
 
 
+
+
+
 const Background = styled.section`
   display:flex;
   flex-direction:column;
@@ -65,7 +68,7 @@ const GlitchArt = () => {
         <Bigpic pathinpublic = "/images/glitchart.jpg"></Bigpic>
         <Bigpic pathinpublic = "/images/glitch.jpg"></Bigpic>
         </Background>
-
+        
         <Foreground>
           <TitleSextion>Glitch_Art_v1</TitleSextion>
           <TextSection>

@@ -229,7 +229,7 @@ const Imagestyled = styled.img`
 
 const ImageBackground = styled(Section)`
   
-  background-image : url(${process.env.PUBLIC_URL +"/images/Inktober/backgroundHD.png"}) ; /* The image used */
+  background-image : url(${process.env.PUBLIC_URL +"/images/Inktober/backgroundLR.png"}) ; /* The image used */
   background-color: #9c0000; /* Used if the image is unavailable */
 
   background-position: center; /* Center the image */
