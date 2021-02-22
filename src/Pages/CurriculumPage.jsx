@@ -22,11 +22,11 @@ class CurriculumPage extends Component {
     const {pathinpublic } = this.state;
     return (
       <Page>
-        <SimpleLink href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Donwload CV</SimpleLink>
+        <SimpleLink href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Download Resume</SimpleLink>
                 
         <PDFreader pathinpublic = {pathinpublic} pagewidth = {this.pagewidth} />
         
-        <SimpleLink href = {process.env.PUBLIC_URL +pathinpublic} target="_blank" >Donwload CV</SimpleLink>
+        <SimpleLink href = {process.env.PUBLIC_URL +pathinpublic} target="_blank" >Download Resume</SimpleLink>
         
       </Page>
       

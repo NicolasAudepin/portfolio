@@ -56,7 +56,7 @@ class CurriculumPage extends Component {
       <Page>
         <div style={{position: 'relative' ,display:'flex',flexDirection:'row'}}>
           <SimpleButton onClick = {this.switchShowAll}>{showall ? "Hide Portfolio":"Show full Portfolio"}</SimpleButton>
-          <SimpleLink href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Donwload Portfolio</SimpleLink>
+          <SimpleLink href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Download Portfolio</SimpleLink>
 
         </div>
         
@@ -69,7 +69,7 @@ class CurriculumPage extends Component {
         
         <div style={{position: 'relative' ,display:'flex',flexDirection:'row'}}>
           <SimpleButton onClick = {this.switchShowAll}>{showall ? "Hide Portfolio":"Show full Portfolio"}</SimpleButton>
-          <SimpleLink href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Donwload Portfolio</SimpleLink>
+          <SimpleLink href = {process.env.PUBLIC_URL + pathinpublic} target="_blank" >Download Portfolio</SimpleLink>
 
         </div>
       </Page>
