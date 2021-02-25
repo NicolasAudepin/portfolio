@@ -25,7 +25,6 @@ const StyledApp = styled.div`
 
 
 
-
 class App extends Component {
 
 
@@ -49,6 +48,8 @@ class App extends Component {
             <Route path = "/portfolio/projects/inktober" exact component = {() => <Inktober/>} />
             <Route path = "/portfolio/projects/sweetdawn" exact component = {() => <SweetDawn/>} />
             <Route path="/portfolio/projects/glitchart" render={() => <BuilderComponent model="page" url="/glitch-art" />}></Route>
+            <Route path="/portfolio/projects/classroom" render={() => <BuilderComponent model="page" url="/the-classroom" />  }></Route>
+            <Route path="/portfolio/projects/music" render={() => <BuilderComponent model="page" url="/music" />  }></Route>
             
             
             

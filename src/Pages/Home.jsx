@@ -28,6 +28,13 @@ const Home = () => {
           
       </BigSection>
 
+      <ArticleSum 
+        title = "Sweet Dawn"
+        summary = "An ensemble of interactive art pieces combining deep learning, modular music and 3D. 
+        They react to the public watching them like a game. "
+        img = "/images/sweet.png"
+        linkPath = "/portfolio/projects/sweetdawn"
+      />
 
       <ArticleSum 
         title = "Inktober 2020"
@@ -38,15 +45,6 @@ const Home = () => {
         linkPath = "/portfolio/projects/inktober"
         video
       />
-
-      <ArticleSum 
-        title = "Sweet Dawn"
-        summary = "An ensemble of interactive art pieces combining deep learning, modular music and 3D. 
-        They react to the public watching them like a game. "
-        img = "/images/sweet.png"
-        linkPath = "/portfolio/projects/sweetdawn"
-      />
-
 
       <ArticleSum 
         title = "The Classroom"
@@ -64,10 +62,8 @@ const Home = () => {
       />
 
       <ArticleSum 
-        title = "Museum Insta"
-        summary = "Three months of confinement is a lot of time. 
-        I used this time to go back to my roots of creating 3D with Blender. 
-        I gave myself the goal of creating a bit of content everyday until the end of the confinement and here are the results."
+        title = "Random Stuff on Instagram"
+        summary = "I post regulary content on my instagram page. Mostly 3D renders using Blender..."
         img = "/images/collage.png"
         linkPath = "/portfolio/projects/insta"
       />
@@ -76,7 +72,7 @@ const Home = () => {
         title = "Musical projects"
         summary = " I have always been doing music. Most of it is lost on some external drives."
         img = "/images/vcvrack.PNG"
-        linkPath = "/portfolio/project/music"
+        linkPath = "/portfolio/projects/music"
       />
 
 
