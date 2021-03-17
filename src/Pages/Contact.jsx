@@ -82,6 +82,9 @@ const Contact = () => {
               <li><a href="https://www.linkedin.com/in/nicolas-audepin-619a0213a/">LinkedIn</a>  </li>
               <li><a href="https://github.com/NicolasAudepin">Github</a></li>
               <li><a href="https://www.youtube.com/channel/UCAuiFLj97V0GXFoSatMMDvw?view_as=subscriber">Youtube</a></li>
+              <li><a href="https://www.instagram.com/nicolasaudepin/">Instagram</a></li> 
+              <li><a href="https://www.reddit.com/user/Vachette2906">Reddit</a></li>  
+              <li><a href="https://mintable.app/u/nicolasaudpein">Mintable (for NFT)</a></li> 
               <li><a href="https://soundcloud.com/astronaut_fr">Soundcloud</a></li>              
             </ul>
           </section>
